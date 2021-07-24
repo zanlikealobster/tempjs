@@ -5,9 +5,14 @@ const app = {
 
   setup() {
       let title = ref(1);
+      let mydata = ref("empty")
       
+      fetch('http://ip.jsontest.com/?callback=showMyIP')
+        .then(response => response.json())
+        .then(data => mydata.value = data);
+    
       return {
-        title
+        title, mydata
       };
   },
   
@@ -15,6 +20,7 @@ const app = {
     <div>
     <button v-on:click="title++">+ increment count</button>
       <p>{{title}}</p>
+      <p><b>{{mydata}}</b></p>
     </div>
   `,
 };
