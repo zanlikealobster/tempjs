@@ -1,5 +1,4 @@
-const {createApp} = Vue;
-const {ref} = Vue;
+const {createApp, ref} from 'vue';
 
 const app = {
   name: 'Test',
