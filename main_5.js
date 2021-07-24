@@ -20,11 +20,11 @@ const app = {
   `,
 };
 
-var elementExists = document.getElementById("find-me");
+var elementExists = document.getElementById("wiki_my_app");
 if(elementExists){
-  createApp(app).mount('#app');
+  createApp(app).mount('#wiki_my_app');
 }
 else{
-  console.log("NO #app div FOUND")
+  console.log("NO #wiki_my_app div FOUND")
 }
 
