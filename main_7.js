@@ -1,4 +1,4 @@
-const {createApp, ref} from 'vue';
+import {createApp, ref} from 'vue';
 
 const app = {
   name: 'Test',
