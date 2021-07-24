@@ -7,7 +7,7 @@ const app = {
       let title = ref(1);
       let mydata = ref("empty")
       
-      fetch('http://ip.jsontest.com/?callback=showMyIP')
+      fetch('https://gorest.co.in/public/v1/users')
         .then(response => response.json())
         .then(data => mydata.value = data);
     
