@@ -13,8 +13,8 @@ const app = {
   
   template: `
     <div>
-    <button v-on:click="title++">+</button>
-      <h1>{{title}}</h1>
+    <button v-on:click="title++">+ increment count</button>
+      <p>{{title}}</p>
     </div>
   `,
 };
