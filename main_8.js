@@ -19,11 +19,12 @@ const app = {
   `,
 };
 
-var elementExists = document.getElementById("wiki_my_app");
-if(elementExists){
-  createApp(app).mount('#wiki_my_app');
-}
-else{
-  console.log("NO #wiki_my_app div FOUND")
-}
-
+window.addEventListener('load', function () {
+  var elementExists = document.getElementById("app");
+  if(elementExists){
+    createApp(app).mount('#app');
+  }
+  else{
+    console.log("NO #app div FOUND")
+  }
+})
